@@ -44,7 +44,7 @@ mainApp.controller('loginController',function($scope,$http){
                 url:"../Backend/Login.php",
                 data:{username: $scope.username, password: $scope.password}
             }) .then(function(response){
-                //make field empty
+                //make field empty  
                 $scope.username = "";
                 $scope.password = "";
                 $scope.alertMsg = true;
