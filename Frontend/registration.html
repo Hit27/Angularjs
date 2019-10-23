@@ -1,0 +1,24 @@
+    <!--------------- Registeration Template ----------------->
+
+    <div class="register">
+        <h1 class="head">Welcome to Registration Page</h1>
+      <form>
+            
+        Username: <input type="text" ng-model="username" placeholder="Email"> <br>
+        Password: <input type="password" ng-model="password" placeholder="Password"> <br>
+        <div class="alertclass" ng-show="alertMsg">
+           
+            {{alertMessage}}
+           </div>
+        <button type="button" ng-click="submitData()">Submit</button>
+    </form>
+    </div>
+    
+    <!--------------- Login Template Route ----------------->
+    
+    <div class="login">
+        <h3>If already registered, please login</h3>
+        <!-- routing to login button thst after click its go to login page in the mainApp.js -->
+        <a href="#!/login"><input type="button" id="register" value="login"/><br>
+        
+    </div>
