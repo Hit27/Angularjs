@@ -3,7 +3,7 @@
 require '../Database/conection.php';
 require '../Database/database.php';
 
-// get database connection
+// get database connection    
 $conection = new conection();
 $database = $conection->getConnection();
 $formdata = new mydatabase($database);
